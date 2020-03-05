@@ -14,6 +14,7 @@
   },
   "info-card#button-right": {
     "props": {
+      "blockClass": "vintage",
       "isFullModeStyle": false,
       "textPosition": "right",
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
@@ -27,6 +28,7 @@
   },
   "info-card#button-left": {
     "props": {
+      "blockClass": "metal",
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
