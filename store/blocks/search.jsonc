@@ -106,12 +106,12 @@
     }
       // -------------------------------
       ,"flex-layout.col#left": {
-        "blocks": [
+        "children": [
           "filter-navigator.v3"
         ]
       }
       ,"flex-layout.col#right": {
-        "blocks": [
+        "children": [
           "search-content"
         ]
       }
