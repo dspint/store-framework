@@ -89,7 +89,7 @@
   
     // -------------------------------
     ,"flex-layout.row#top": {
-      "blocks": [
+      "children": [
         "total-products.v2"
         ,"order-by.v2"
       ]
@@ -107,12 +107,12 @@
       // -------------------------------
       ,"flex-layout.col#left": {
         "blocks": [
-          "filter-navigator.v2"
+          "filter-navigator.v3"
         ]
       }
       ,"flex-layout.col#right": {
         "blocks": [
-          "search-content.v2"
+          "search-content"
         ]
       }
 
