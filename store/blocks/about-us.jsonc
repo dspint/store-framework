@@ -120,7 +120,7 @@
     ,"tab-layout#home": {
       "children": [
         "tab-list#home"
-        ,"tab-content"
+        ,"tab-content#home"
       ]
     }
       // -------------------------------
