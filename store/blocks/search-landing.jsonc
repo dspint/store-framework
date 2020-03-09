@@ -1,25 +1,16 @@
 {
-
   "store.custom#landing": {
     "blocks": [
       "image#landingbanner",
       "search-result-layout.customQuery"
     ]
   },
-
-  
-  // IMAGE
-  // -------------------------------
   "image#landingbanner": { 
     "props": {
       "src": "https://i.pinimg.com/280x280_RS/25/36/cb/2536cb9bee8f0187c75041832dce55fc.jpg",
       "minWidth": "100%"
     }
   },
-
-
-  // CUSTOM SEARCH QUERY
-  // -------------------------------
   "search-result-layout.customQuery": {
     "props": {
       "querySchema": {
@@ -31,5 +22,4 @@
       }
     }
   }
-
 }
