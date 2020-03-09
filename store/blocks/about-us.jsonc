@@ -117,7 +117,7 @@
 
     // TAB LAYOUT  
     // -------------------------------
-    ,"tab-layout:home": {
+    ,"tab-layout#home": {
       "children": [
         "tab-list#home"
         ,"tab-content"
