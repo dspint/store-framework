@@ -46,6 +46,7 @@
         }
       }
 
+
     
     // TAB LAYOUT  
     // -------------------------------
@@ -116,6 +117,7 @@
           }
 
 
+
     // TAB LAYOUT  
     // -------------------------------
     ,"tab-layout#home": {
@@ -127,19 +129,19 @@
       // -------------------------------
       ,"tab-list#home": {
         "children": [
-          "tab-list#home.item#home1"
-          ,"tab-list#home.item#home2"
+          "tab-list.item#home1"
+          ,"tab-list.item#home2"
         ]
       }
         // -------------------------------
-        ,"tab-list#home.item#home1": {
+        ,"tab-list.item#home1": {
           "props": {
             "tabId": "majorAppliances"
             ,"label": "Major Appliances"
             ,"defaultActiveTab": true
           }
         }
-        ,"tab-list#home.item#home2": {
+        ,"tab-list.item#home2": {
           "props": {
             "tabId": "electronics"
             ,"label": "Electronics"
@@ -148,12 +150,12 @@
       // -------------------------------
       ,"tab-content#home": {
         "children": [
-          "tab-content#home.item#home1"
-          ,"tab-content#home.item#home2"
+          "tab-content.item#home1"
+          ,"tab-content.item#home2"
         ]
       }
         // -------------------------------
-        ,"tab-content#home.item#home1": {
+        ,"tab-content.item#home1": {
           "children": [
             "rich-text#home1"
           ],
@@ -168,7 +170,7 @@
               ,"font": "t-heading-3"
             }
           }
-        ,"tab-content#home.item#home2": {
+        ,"tab-content.item#home2": {
           "children": [
             "rich-text#home2"
           ],
