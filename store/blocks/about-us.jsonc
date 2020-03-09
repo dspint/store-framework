@@ -3,47 +3,115 @@
   "store.custom#about-us": {
     "blocks": [
       "flex-layout.row#about-us"
+      ,"tab-layout"
     ]
   }
 
+  
+  // ROW: ABOUT US
   // -------------------------------
-
   ,"flex-layout.row#about-us": { 
     "children": [
-      "image#about-us",
-      "flex-layout.col#text-about-us"
+      "image#about-us"
+      ,"flex-layout.col#text-about-us"
     ]
   }
-  
-  ,"flex-layout.col#text-about-us": {
-    "children": [
-      "rich-text#about-title",
-      "rich-text#about-content"
-    ],
+    // -------------------------------
+    ,"image#about-us": {
+      "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png"
+        ,"maxHeight": "600px"
+      }
+    }
+    // -------------------------------
+    ,"flex-layout.col#text-about-us": {
+      "children": [
+        "rich-text#about-title"
+        ,"rich-text#about-content"
+      ],
+      "props": {
+        "preventVerticalStretch": true
+      }
+    }
+      // -------------------------------
+      ,"rich-text#about-title": {
         "props": {
-      "preventVerticalStretch": true
+          "text": "# About FlatFlat"
+        }
+      }
+      ,"rich-text#about-content": {
+        "props": {
+          "text": "FlatFlat is an electronics store with a long standing tradition for creating modern and vintage items. Out objective is to create home appliances that make your house stand out, no matter your style. Merely 2 months old, we're already the store with the most beautiful products among all VTEX stores. We are currently building our site with the aim of giving our customers an unforgetable experience with our brand!"
+        }
+      }
+
+    
+    // TAB LAYOUT  
+    // -------------------------------
+    ,"tab-layout": {
+      "children": [
+        "tab-list"
+        ,"tab-content"
+      ]
     }
-  }
-  
-  ,"rich-text#about-title": {
-    "props": {
-      "text":
-      "# About FlatFlat"
-    }
-  }
-  
-  ,"rich-text#about-content": {
-    "props": {
-      "text":
-      " FlatFlat is an electronics store with a long standing tradition for creating modern and vintage items. Out objective is to create home appliances that make your house stand out, no matter your style. Merely 2 months old, we're already the store with the most beautiful products among all VTEX stores. We are currently building our site with the aim of giving our customers an unforgetable experience with our brand!"
-    }
-  }
-  
-  ,"image#about-us": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
-      "maxHeight": "600px"
-    }
-  }
-  
+      // -------------------------------
+      ,"tab-list": {
+        "children": [
+          "tab-list.item#1"
+          ,"tab-list.item#2"
+        ]
+      }
+        // -------------------------------
+        ,"tab-list.item#1": {
+          "props": {
+            "tabId": "majorAppliances"
+            ,"label": "Major Appliances"
+            ,"defaultActiveTab": true
+          }
+        }
+        ,"tab-list.item#2": {
+          "props": {
+            "tabId": "electronics"
+            ,"label": "Electronics"
+          }
+        }
+      // -------------------------------
+      ,"tab-content": {
+        "children": [
+          "tab-content.item#1"
+          ,"tab-content.item#2"
+        ]
+      }
+        // -------------------------------
+        ,"tab-content.item#1": {
+          "children": [
+            "rich-text#1"
+          ],
+          "props": {
+            "tabId": "majorAppliances"
+          }
+        }
+          ,"rich-text#1": {
+            "props": {
+              "text": "Texto para Major Appliances"
+              ,"textPosition": "CENTER"
+              ,"font": "t-heading-3"
+            }
+          }
+        ,"tab-content.item#2": {
+          "children": [
+            "rich-text#2"
+          ],
+          "props": {
+            "tabId": "electronics"
+          }
+        }
+          ,"rich-text#2": {
+            "props": {
+              "text": "Texto para Electronics"
+              ,"textPosition": "CENTER"
+              ,"font": "t-heading-3"
+            }
+          }
+
 }
