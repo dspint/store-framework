@@ -114,4 +114,73 @@
             }
           }
 
+
+    // TAB LAYOUT  
+    // -------------------------------
+    ,"tab-layout:home": {
+      "children": [
+        "tab-list#home"
+        ,"tab-content"
+      ]
+    }
+      // -------------------------------
+      ,"tab-list#home": {
+        "children": [
+          "tab-list#home.item#home1"
+          ,"tab-list#home.item#home2"
+        ]
+      }
+        // -------------------------------
+        ,"tab-list#home.item#home1": {
+          "props": {
+            "tabId": "majorAppliances"
+            ,"label": "Major Appliances"
+            ,"defaultActiveTab": true
+          }
+        }
+        ,"tab-list#home.item#home2": {
+          "props": {
+            "tabId": "electronics"
+            ,"label": "Electronics"
+          }
+        }
+      // -------------------------------
+      ,"tab-content#home": {
+        "children": [
+          "tab-content#home.item#home1"
+          ,"tab-content#home.item#home2"
+        ]
+      }
+        // -------------------------------
+        ,"tab-content#home.item#home1": {
+          "children": [
+            "rich-text#home1"
+          ],
+          "props": {
+            "tabId": "majorAppliances"
+          }
+        }
+          ,"rich-text#home1": {
+            "props": {
+              "text": "Área do conteúdo da tab-list.item com  tabId = majorAppliances"
+              ,"textPosition": "CENTER"
+              ,"font": "t-heading-3"
+            }
+          }
+        ,"tab-content#home.item#home2": {
+          "children": [
+            "rich-text#home2"
+          ],
+          "props": {
+            "tabId": "electronics"
+          }
+        }
+          ,"rich-text#home2": {
+            "props": {
+              "text": "Área do conteúdo da tab-list.item com  tabId = electronics"
+              ,"textPosition": "CENTER"
+              ,"font": "t-heading-3"
+            }
+          }
+
 }
