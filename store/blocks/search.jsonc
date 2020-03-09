@@ -98,27 +98,10 @@
     // -------------------------------
     ,"flex-layout.row#results": { 
       "children": [
-        "flex-layout.col#left"
-        ,"flex-layout.col#right"
-        // "flex-layout.col#filter"
-        // ,"flex-layout.col#search"
+        "filter-navigator.v3"
+        ,"search-content"
       ]
     }
-      // -------------------------------
-      ,"flex-layout.col#left": {
-        "children": [
-          "filter-navigator.v3"
-        ]
-        ,"props": {
-          "width": "20%"
-        }
-      }
-      ,"flex-layout.col#right": {
-        "children": [
-          "search-content"
-        ]
-      }
-
 
   ,"search-content": {
     "blocks": ["gallery", "not-found"]
