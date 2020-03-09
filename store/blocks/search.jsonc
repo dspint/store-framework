@@ -88,18 +88,33 @@
   }
   
     // -------------------------------
-    ,"flex-layout.row#top": {}
+    ,"flex-layout.row#top": {
+      "blocks": [
+        "total-products.v2"
+        ,"order-by.v2"
+      ]
+    }
   
     // -------------------------------
     ,"flex-layout.row#results": { 
       "children": [
-        "flex-layout.col#filter", 
-        "flex-layout.col#search"
+        "flex-layout.col#left"
+        ,"flex-layout.col#right"
+        // "flex-layout.col#filter"
+        // ,"flex-layout.col#search"
       ]
     }
       // -------------------------------
-      ,"flex-layout.col#filter": {}
-      ,"flex-layout.col#search": {}
+      ,"flex-layout.col#left": {
+        "blocks": [
+          "filter-navigator.v2"
+        ]
+      }
+      ,"flex-layout.col#right": {
+        "blocks": [
+          "search-content.v2"
+        ]
+      }
 
 
   // ,"search-content": {
