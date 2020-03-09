@@ -98,7 +98,7 @@
       // -------------------------------
       "flex-layout.col#filter": {
         "props": {
-          "filter": 20
+          "filter": "20%"
         }
       },
       "flex-layout.col#search": {},
