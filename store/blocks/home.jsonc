@@ -1,4 +1,14 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
 {
+  // MAIN PAGE INIT
   "store.home": { 
     "blocks": [
       "rich-text",
@@ -12,23 +22,20 @@
     ]
   },
 
-  "flex-layout.row": {
-    "children": [
-      "info-card#rethink",
-      "flex-layout.col"
-    ]
-  },
+  
+  // -------------------------------
 
 
-
-
-
+  // TEXT SECTION
   "rich-text": {
     "props": {
       "text": "**Hello, World**",
       "textPosition": "RIGHT"
     }
   },
+
+
+  // BOTH 'CARD' WIDGETS
   "info-card#button-right": {
     "props": {
       "blockClass": "vintage",
@@ -59,84 +66,99 @@
   },
 
 
+  // -------------------------------
 
-
-  "info-card#rethink": {
-    "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
-    }
-  },
-  "flex-layout.col": {
+  // FLEX 'ROW' WRAPPER IN ABOVE MAIN BLOCK LIST
+  "flex-layout.row": {
     "children": [
-      "image#electronics",
-      "image#major-appliance"
+      "info-card#rethink",
+      "flex-layout.col"
     ]
   },
-  "image#electronics": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
-      "maxWidth": "100%"
-    }
-  },
-  "image#major-appliance": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-      "maxWidth": "100%"
-    }
-  },
+    // Child blocks
+    "info-card#rethink": {
+      "props": {
+        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+        "isFullModeStyle": true,
+        "headline": "Time to rethink your kitchen",
+        "callToActionText": "Discover",
+        "textPosition": "center"
+      }
+    },
+    "flex-layout.col": {
+      "children": [
+        "image#electronics",
+        "image#major-appliance"
+      ]
+    },
+      // Child blocks of the above column layout
+      "image#electronics": {
+        "props": {
+          "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+          "maxWidth": "100%"
+        }
+      },
+      "image#major-appliance": {
+        "props": {
+          "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+          "maxWidth": "100%"
+        }
+      },
 
 
+  // -------------------------------
 
-
+  // THIS IS SHOWN IN DESKTOP WIDTHS
+  // Note: The DOM contents are appended/removed instead of show/hide when toggling device widths
   "responsive-layout.desktop#desktop": {
     "children": [
       "rich-text#desktop",
       "image#desktop"
     ]
   },
+    // Child blocks
+    "rich-text#desktop": {
+      "props": {
+        "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "image#desktop": {
+      "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+        "link": {
+          "url": "/small-appliances/coffee-makers"
+        },
+        "alt": "Coffee Makers Collection",
+        "maxWidth": "100%"
+      }
+    },
+
+  // THIS IS SHOWN IN MOBILE WIDTHS
   "responsive-layout.mobile#mobile": {
     "children": [
       "rich-text#mobile",
       "image#mobile"
     ]
   },
-  "rich-text#desktop": {
-    "props": {
-      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
+    // Child blocks
+    "rich-text#mobile": {
+      "props": {
+        "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "image#mobile": {
+      "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+        "link": {
+          "url": "/small-appliances/coffee-makers"
+        } ,
+        "alt": "Coffee Makers Collection",
+        "maxWidth": "100%"
+      }
     }
-  },
-  "image#desktop": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      },
-      "alt": "Coffee Makers Collection",
-      "maxWidth": "100%"
-    }
-  },
-  "rich-text#mobile": {
-    "props": {
-      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
-  "image#mobile": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      } ,
-      "alt": "Coffee Makers Collection",
-      "maxWidth": "100%"
-    }
-  }
 
 }

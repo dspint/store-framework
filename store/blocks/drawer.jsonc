@@ -1,9 +1,9 @@
 {
   "drawer": {
-      "children": [
+    "children": [
       "vtex.menu@2.x:menu#drawer"
-      ]
-    },
+    ]
+  },
 
   "vtex.menu@2.x:menu#drawer": {
       "children": [
