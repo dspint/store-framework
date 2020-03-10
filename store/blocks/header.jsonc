@@ -52,6 +52,7 @@
         }
       },
     // -------------------------------
+    // See menu in `/store/blocks/menu.jsonc`
     "header-row#menu": { 
       "children": [ 
         "header-spacer", 
@@ -59,18 +60,6 @@
         "header-spacer"
       ]
     },
-      // -------------------------------
-      // See items in `/store/blocks/menu-items.jsonc`
-      "vtex.menu@2.x:menu#categories": {
-        "children": [
-          "menu-item#major-appliances",
-          "menu-item#small-appliances", 
-          "menu-item#electronics"
-        ], 
-        "props": { 
-          "orientation": "horizontal" 
-        }
-      },
 
 
 
