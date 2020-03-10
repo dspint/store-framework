@@ -1,5 +1,6 @@
 {
   // -------------------------------
+  // Submenu defined in menu.jsonc
   "menu-item#major-appliances": {
     "props": {
       "type": "custom",
@@ -12,16 +13,10 @@
       "vtex.menu@2.x:submenu#major"
     ]
   },
-    // -------------------------------
-    // Menu defined in drawer.jsonc
-    "vtex.menu@2.x:submenu#major": { 
-      "children": [
-        "vtex.menu@2.x:menu#major"
-      ]
-    },
 
 
   // -------------------------------
+  // Submenu defined in menu.jsonc
   "menu-item#small-appliances": {
     "props": {
       "type": "category",
@@ -35,16 +30,10 @@
       "vtex.menu@2.x:submenu#small"
     ]
   },
-    // -------------------------------
-    // Menu defined in drawer.jsonc
-    "vtex.menu@2.x:submenu#small": { 
-      "children": [
-        "vtex.menu@2.x:menu#small"
-      ]
-    },
 
 
   // -------------------------------
+  // Submenu defined in menu.jsonc
   "menu-item#electronics": {
     "props": {
       "type": "category",
@@ -58,13 +47,6 @@
       "vtex.menu@2.x:submenu#electronics"
     ]
   },
-    // -------------------------------
-    // Menu defined in drawer.jsonc
-    "vtex.menu@2.x:submenu#electronics": { 
-      "children": [
-        "vtex.menu@2.x:menu#electronics"
-      ]
-    },
 
 
   // -------------------------------
