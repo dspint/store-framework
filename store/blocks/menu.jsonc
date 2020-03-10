@@ -1,4 +1,6 @@
 {
+
+  // MAIN MENU
   // -------------------------------
   // See items in `/store/blocks/menu-items.jsonc`
   "vtex.menu@2.x:menu#categories": {
@@ -12,6 +14,8 @@
     }
   },
 
+
+    // SUBMENU: MAJOR
     // -------------------------------
     // Menu defined in drawer.jsonc
     "vtex.menu@2.x:submenu#major": { 
@@ -33,6 +37,7 @@
       },
 
 
+    // SUBMENU: SMALL APPLIANCES
     // -------------------------------
     // Menu defined in drawer.jsonc
     "vtex.menu@2.x:submenu#small": { 
@@ -54,6 +59,7 @@
       },
 
 
+    // SUBMENU: ELECTRONICS
     // -------------------------------
     // Menu defined in drawer.jsonc
     "vtex.menu@2.x:submenu#electronics": { 
@@ -73,4 +79,5 @@
           "orientation": "vertical"
         }
       }
+      
 }
