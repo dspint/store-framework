@@ -19,6 +19,18 @@
         "vtex.menu@2.x:menu#major"
       ]
     },
+      // -------------------------------
+      // Menu items defined in menu-items.jsonc
+      "vtex.menu@2.x:menu#major":{
+        "children": [
+          "menu-item#refrigerators",
+          "menu-item#ovens",
+          "menu-item#washers"
+        ],
+        "props":{
+          "orientation": "vertical"
+        }
+      },
 
 
     // -------------------------------
@@ -28,6 +40,18 @@
         "vtex.menu@2.x:menu#small"
       ]
     },
+      // -------------------------------
+      // Menu items defined in menu-items.jsonc
+      "vtex.menu@2.x:menu#small":{
+        "children": [
+          "menu-item#mixers",
+          "menu-item#toasters",
+          "menu-item#coffee"
+        ],
+        "props":{
+          "orientation": "vertical"
+        }
+      },
 
 
     // -------------------------------
@@ -36,5 +60,17 @@
       "children": [
         "vtex.menu@2.x:menu#electronics"
       ]
-    }
+    },
+      // -------------------------------
+      // Menu items defined in menu-items.jsonc
+      "vtex.menu@2.x:menu#electronics":{
+        "children": [
+          "menu-item#cameras",
+          "menu-item#laptops",
+          "menu-item#tvs"
+        ],
+        "props":{
+          "orientation": "vertical"
+        }
+      }
 }
