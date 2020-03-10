@@ -20,7 +20,7 @@
       ]
     },
 
-    
+
     // -------------------------------
     // Menu defined in drawer.jsonc
     "vtex.menu@2.x:submenu#small": { 
@@ -36,5 +36,5 @@
       "children": [
         "vtex.menu@2.x:menu#electronics"
       ]
-    },
+    }
 }
